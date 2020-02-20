@@ -10,11 +10,12 @@
     "express": "^4.17.1"
   },
   "scripts": {
-    "start": "croos-env NODE_ENV=producrion node app.js",
+    "start": "yarn run client:instal &&  yarn run server:instal && croos-env NODE_ENV=producrion node app.js",
     "server": "nodemon app.js",
     "client": "yarn run start --prefix ./client",
     "client:install": "yarn install --prefix client",
     "client:build": "yarn run build --prefix client",
+    "server:install": "yarn install",
     "dev": "croos-env NODE_ENV=development concurrently \"yarn run server\" \"yarn run client\" "
   },
   "devDependencies": {
