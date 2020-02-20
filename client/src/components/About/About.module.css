@@ -1,0 +1,78 @@
+.container {
+    width: 89%;
+    margin: 0 auto;
+    padding-bottom: 81px;
+}
+
+.desc {
+    padding-top: 16px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+.title {
+    color: #1A1A1A;
+    font-size: 35px;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+.title span {
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #7E7E7E;
+    font-size: 20px;
+}
+
+.list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 30%;
+    padding: 48px 32px;
+    text-align: center;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 32px;
+}
+
+.design {
+    margin: 0 auto;
+    width: 106px;
+    height: 96px;
+    background-image: url('../../assets/img/design-icon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 40px;
+}
+
+.data {
+    composes: design;
+    background-image: url('../../assets/img/data-icon.png');
+}
+
+.retina {
+    composes: design;
+    background-image: url('../../assets/img/retina-icon.png');
+}
+
+.itemTitle {
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: #1A1A1A;
+}
+
+.itemDesc {
+    color: #7E7E7E;
+}

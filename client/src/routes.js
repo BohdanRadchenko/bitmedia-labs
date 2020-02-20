@@ -1,6 +1,6 @@
 import React from 'react'
 import {Redirect, Route, Switch} from 'react-router-dom'
-import {AsyncHome, AsyncStats, AsyncUsers} from "./async.routes";
+import {AsyncHome, AsyncUsersDetail, AsyncUsers} from "./async.routes";
 
 export const useRoutes = () => {
   return (
@@ -9,14 +9,11 @@ export const useRoutes = () => {
         <Route path="/home" exact >
           <AsyncHome/>
         </Route>
-        <Route path="/users" >
+        <Route path="/users" exact>
           <AsyncUsers/>
         </Route>
         <Route path="/users/:id" >
-          <AsyncUsers/>
-        </Route>
-        <Route path="/stats" >
-          <AsyncStats/>
+          <AsyncUsersDetail/>
         </Route>
         <Redirect to="/home"/>
       </Switch>

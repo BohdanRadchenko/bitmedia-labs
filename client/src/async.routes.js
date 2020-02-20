@@ -8,8 +8,8 @@ export const AsyncUsers = lazy(() =>
   import('./pages/UsersPage'),
 );
 
-export const AsyncStats = lazy(() =>
-  import('./pages/StatsPage'),
+export const AsyncUsersDetail = lazy(() =>
+  import('./pages/UsersDetailPage'),
 );
 
 

@@ -1,0 +1,46 @@
+.sections {
+    margin-bottom: 40px;
+    background: linear-gradient(93.19deg, #255D8B 2.29%, #3A80BA 96.79%);
+
+}
+
+.container {
+    padding: 80px 0;
+    position: relative;
+    width: 89%;
+    margin: 0 auto;
+}
+
+.desc {
+    width: 48%;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+
+}
+
+.button {
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 64px;
+    color: #255D8C;
+}
+
+.macbook {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 697px;
+    height: 427px;
+    background-image: url('../../assets/img/macbook.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

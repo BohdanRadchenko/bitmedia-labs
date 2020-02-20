@@ -1,0 +1,18 @@
+.header {
+    width: 100%;
+    display: block;
+    padding: 0;
+    background-color: #3A80BA;
+}
+
+.nav {
+    width: 89%;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 40px;
+}

@@ -1,0 +1,147 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: 100%;
+    background-image: url('../../assets/img/price-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+    color: #FFFFFF;
+}
+
+.container {
+    width: 89%;
+    margin: 0 auto;
+}
+
+.desc {
+    margin: 0 auto;
+    width: 55%;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 32px;
+    color: #1A1A1A;
+    margin-bottom: 24px;
+}
+
+.title span {
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #7E7E7E;
+}
+
+.priceList {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.priceItem {
+    padding: 40px 0;
+    width: 30%;
+    border: 2px solid #F1F1F1;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 32px;
+
+}
+
+.priceItem:hover .cost {
+    font-size: 56px;
+    line-height: 55px;
+    text-align: center;
+    color: #3A80BA;
+}
+
+.itemTitle {
+    font-weight: 600;
+    font-size: 24px;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+}
+
+.basic {
+    margin: 0 auto;
+    width: 210px;
+    height: 122px;
+    background-image: url('../../assets/img/basic-price.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 18px;
+}
+
+.standart {
+    composes: basic;
+    background-image: url('../../assets/img/standart-price.png');
+}
+
+.unlimited {
+    composes: basic;
+    background-image: url('../../assets/img/unlimited-price.png');
+}
+
+.cost {
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.cost::after {
+    content: ' ';
+    display: block;
+    width: 250px;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(140,140,140,1) 30%, rgba(158,158,158,1) 70%, rgba(255,255,255,1) 100%);
+    margin: 24px auto;
+    border: 1px solid #E5E5E5;
+}
+
+.text {
+    padding: 0 80px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #7E7E7E;
+    margin-bottom: 24px;
+}
+
+.button {
+    padding: 16px 52px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #3A80BA;
+    border-radius: 8px;
+}
+
+.contact {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contactText {
+    font-size: 20px;
+    color: #7E7E7E;
+    margin-right: 6px;
+}
+
+.contactLink {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(48, 103, 151, 0.8);
+    text-decoration: none;
+}
+

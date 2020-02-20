@@ -6,20 +6,20 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "concurrently": "^5.1.0",
     "config": "^3.2.5",
-    "cross-env": "^7.0.0",
     "express": "^4.17.1"
   },
   "scripts": {
     "start": "croos-env NODE_ENV=producrion node app.js",
     "server": "nodemon app.js",
-    "client": "yarn run start --prefix client",
+    "client": "yarn run start --prefix ./client",
     "client:install": "yarn install --prefix client",
     "client:build": "yarn run build --prefix client",
     "dev": "croos-env NODE_ENV=development concurrently \"yarn run server\" \"yarn run client\" "
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "cross-env": "^7.0.0",
+    "concurrently": "^5.1.0"
   }
 }

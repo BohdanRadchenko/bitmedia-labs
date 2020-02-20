@@ -1,0 +1,75 @@
+.container {
+    padding: 24px 0;
+}
+
+.pagNav {
+    width: 89%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 24px;
+    padding: 0;
+    list-style: none;
+}
+
+.item {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-right: 8px;
+    width: 48px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid #F1F1F1;
+    transition: all 0.3s ease-in-out;
+}
+
+.item:last-child {
+    margin: 0;
+}
+
+.item:hover {
+    border: 2px solid #3A80BA;
+}
+
+.activeItem {
+    composes: item;
+    color: #ffffff;
+    border: none;
+    background-color: #3A80BA;
+}
+
+.itemTest {
+    text-align: center;
+    line-height: 48px;
+}
+
+.button {
+    outline: none;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../../assets/icons/chevron-left-solid.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.button:disabled {
+    opacity: 0.3;
+}
+
+.next {
+    transform: rotate(180deg);
+}
+
+

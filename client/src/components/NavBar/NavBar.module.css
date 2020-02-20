@@ -1,0 +1,55 @@
+.navigations {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: 89%;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    padding: 18px 0;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #3A80BA;
+    transition: all 0.3s linear;
+}
+
+.navLink:hover {
+    color: #306797;
+}
+
+.navLink:first-child::before {
+    display: none;
+}
+
+.main {
+    color: #CCCCCC;
+}
+
+.main,
+.stats,
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.main::before,
+.stats::before,
+.name::before {
+    content: ' ';
+    display: block;
+    width: 8px;
+    height: 12px;
+    margin: 0 12px;
+    background-image: url('../../assets/icons/chevron-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    opacity: 0.3;
+    transform: rotate(180deg);
+}

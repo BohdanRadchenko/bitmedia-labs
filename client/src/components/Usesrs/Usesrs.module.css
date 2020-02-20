@@ -1,0 +1,87 @@
+.section {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: 89%;
+    margin: 0 auto;
+}
+
+
+.title {
+    color: #1a1a1a;
+    margin-bottom: 16px;
+}
+
+.table {
+    width: 100%;
+    table-layout: fixed;
+    /*border-collapse: collapse;*/
+}
+
+.tableHead {
+    background-color: #3A80BA;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.tableHead th {
+    font-weight: 400;
+    padding: 13px 0;
+}
+
+.tableId {
+    width: 4%;
+}
+
+.tableFirstName,
+.tableLastName {
+    width: 12.6%;
+}
+
+.tableEmail {
+    width: 26%;
+}
+
+.tableGender {
+    width: 9.1%;
+}
+
+.tableIp {
+    width: 12.5%;
+}
+
+.tableClicks {
+    width: 12%;
+}
+
+.tablePage {
+    width: 12%;
+}
+
+
+.tableTr {
+    cursor: pointer;
+}
+
+.tableTr td {
+    padding: 6px 0;
+    text-align: center;
+}
+
+.tableTr td:nth-child(2),
+.tableTr td:nth-child(3),
+.tableTr td:nth-child(4) {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.tableTr:nth-child(even) {
+    background-color: #F1F1F1;
+}
+
+.tableTr:hover {
+    color: #3A80BA;
+}

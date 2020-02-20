@@ -1,11 +1,14 @@
 import axios from 'axios';
 import {
- fetchUsersRequest,
+  fetchUsersRequest,
   fetchUsersSuccess,
-  fetchUsersError
+  fetchUsersError,
+  fetchUsersByIdRequest,
+  fetchUsersByIdSuccess,
+  fetchUsersByIdError,
 } from './usersActions';
 
-export const fetchUsers = (page) => dispatch => {
+export const fetchUsers = page => dispatch => {
   dispatch(fetchUsersRequest());
   axios
     .get(`/api/users?page=${page}&count=50`)
@@ -14,5 +17,17 @@ export const fetchUsers = (page) => dispatch => {
     })
     .catch(error => {
       dispatch(fetchUsersError(error));
+    });
+};
+
+export const fetchUsersById = (id) => dispatch => {
+  dispatch(fetchUsersByIdRequest());
+  axios
+    .get(`/api/users/${id}`)
+    .then(response => {
+      dispatch(fetchUsersByIdSuccess(response.data));
+    })
+    .catch(error => {
+      dispatch(fetchUsersByIdError(error));
     });
 };

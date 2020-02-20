@@ -1,0 +1,15 @@
+.section {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: 89%;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 26px;
+}
