@@ -1,0 +1,10 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 34px;
+}
+
+.title {
+    font-size: 24px;
+    color: #1A1A1A;
+}

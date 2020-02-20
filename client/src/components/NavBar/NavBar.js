@@ -23,15 +23,18 @@ const NavBar = ({user}) => {
             </NavLink>
 
           {user && (
-            <NavLink
-              className={`${css.navLink} ${css.name}`}
-              to='/users'>
-              {user.map(el => (
-                <p key={el.id}>
-                  {`${el.first_name} ${el.last_name}`}
-                </p>
+            <>
+            {user.map(el => (
+                <NavLink
+                  key={el.id}
+                  className={`${css.navLink} ${css.name}`}
+                  to={`/users/${el.id}`} >
+                  <p>
+                    {`${el.first_name} ${el.last_name}`}
+                  </p>
+                </NavLink>
               ))}
-            </NavLink>
+              </>
           )}
 
         </div>

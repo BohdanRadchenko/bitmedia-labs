@@ -18,8 +18,8 @@
     "dev": "croos-env NODE_ENV=development concurrently \"yarn run server\" \"yarn run client\" "
   },
   "devDependencies": {
-    "nodemon": "^2.0.2",
+    "concurrently": "^5.1.0",
     "cross-env": "^7.0.0",
-    "concurrently": "^5.1.0"
+    "nodemon": "^2.0.2"
   }
 }

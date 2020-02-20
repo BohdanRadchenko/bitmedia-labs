@@ -10,6 +10,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
 import Charts from "../components/Charts/Charts";
+import TestChart from "../components/TestChart/TestChart";
 
 const UsersPage = ({fetchUsersBuId, fetchStatsById, user, stats, page}) => {
   const history = useHistory()
@@ -24,7 +25,8 @@ const UsersPage = ({fetchUsersBuId, fetchStatsById, user, stats, page}) => {
     <div>
       <Header/>
       <NavBar user={user} />
-      <Charts />
+      <Charts user={user} />
+      <TestChart/>
       <Footer/>
     </div>
   )

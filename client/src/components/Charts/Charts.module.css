@@ -4,12 +4,13 @@
 }
 
 .container {
+    padding: 24px 0;
     width: 89%;
     margin: 0 auto;
 }
 
-.logo {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 26px;
+.name {
+    font-size: 32px;
+    color: #1A1A1A;
+    margin-bottom: 24px;
 }
