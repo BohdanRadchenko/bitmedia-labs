@@ -9,8 +9,11 @@
     "config": "^3.2.5",
     "express": "^4.17.1"
   },
+"comment" : {
+  "start": "croos-env NODE_ENV=producrion node app.js"
+},
   "scripts": {
-    "start": "croos-env NODE_ENV=producrion node app.js && yarn run client:install &&  yarn run server:install ",
+    "start": "node app.js",
     "server": "nodemon app.js",
     "client": "yarn run start --prefix ./client",
     "client:install": "yarn install --prefix client",
