@@ -1,0 +1,43 @@
+{
+  "files": {
+    "static/js/0.07fdbb19.chunk.js": "/static/js/0.07fdbb19.chunk.js",
+    "static/js/0.07fdbb19.chunk.js.map": "/static/js/0.07fdbb19.chunk.js.map",
+    "main.css": "/static/css/main.13b30420.chunk.css",
+    "main.js": "/static/js/main.f3130e1e.chunk.js",
+    "main.js.map": "/static/js/main.f3130e1e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ef2005ad.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ef2005ad.js.map",
+    "static/js/3.486c0ff3.chunk.js": "/static/js/3.486c0ff3.chunk.js",
+    "static/js/3.486c0ff3.chunk.js.map": "/static/js/3.486c0ff3.chunk.js.map",
+    "static/css/4.11c0b942.chunk.css": "/static/css/4.11c0b942.chunk.css",
+    "static/js/4.20212f02.chunk.js": "/static/js/4.20212f02.chunk.js",
+    "static/js/4.20212f02.chunk.js.map": "/static/js/4.20212f02.chunk.js.map",
+    "static/css/5.f3872a47.chunk.css": "/static/css/5.f3872a47.chunk.css",
+    "static/js/5.6d1ee08b.chunk.js": "/static/js/5.6d1ee08b.chunk.js",
+    "static/js/5.6d1ee08b.chunk.js.map": "/static/js/5.6d1ee08b.chunk.js.map",
+    "static/css/6.05ef27da.chunk.css": "/static/css/6.05ef27da.chunk.css",
+    "static/js/6.bc0f3ab2.chunk.js": "/static/js/6.bc0f3ab2.chunk.js",
+    "static/js/6.bc0f3ab2.chunk.js.map": "/static/js/6.bc0f3ab2.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f779c753038c4cfc1bc969715f134a03.js": "/precache-manifest.f779c753038c4cfc1bc969715f134a03.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/4.11c0b942.chunk.css.map": "/static/css/4.11c0b942.chunk.css.map",
+    "static/css/5.f3872a47.chunk.css.map": "/static/css/5.f3872a47.chunk.css.map",
+    "static/css/6.05ef27da.chunk.css.map": "/static/css/6.05ef27da.chunk.css.map",
+    "static/css/main.13b30420.chunk.css.map": "/static/css/main.13b30420.chunk.css.map",
+    "static/js/3.486c0ff3.chunk.js.LICENSE.txt": "/static/js/3.486c0ff3.chunk.js.LICENSE.txt",
+    "static/media/MainBunner.module.css": "/static/media/mobile.05a9dc56.png",
+    "static/media/NavBar.module.css": "/static/media/chevron-arrow.dcbef609.svg",
+    "static/media/PaginationBar.module.css": "/static/media/chevron-left-solid.31f55d2d.svg",
+    "static/media/About.module.css": "/static/media/design-icon.53205ebb.png",
+    "static/media/MainFooter.module.css": "/static/media/footer-bg.d79ae9da.png",
+    "static/media/Faster.module.css": "/static/media/macbook.72d7c4ec.png",
+    "static/media/Price.module.css": "/static/media/price-bg.3728b159.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef2005ad.js",
+    "static/js/3.486c0ff3.chunk.js",
+    "static/css/main.13b30420.chunk.css",
+    "static/js/main.f3130e1e.chunk.js"
+  ]
+}
