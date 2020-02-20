@@ -4,7 +4,7 @@ const fs = require('fs')
 const path = require("path");
 const bodyParser = require("body-parser");
 
-const PORT = config.get("port") || 5000;
+const PORT = process.env.PORT || config.get("port") || 3000
 
 const app = express();
 
