@@ -4,7 +4,18 @@ import PageCharts from "./PageCharts/PageCharts";
 
 import css from './Charts.module.css';
 
-const Charts = ({user}) => {
+const Charts = ({user, stats}) => {
+
+  const labels = stats.map(el => el.date)
+  const clicks = stats.map(el => el.clicks)
+  const pageViews = stats.map(el => el.page_views)
+
+  console.log('labels', labels)
+  const dateNow = new Date().toLocaleDateString().split('.').reverse().join('-')
+  console.log('dateNow', dateNow)
+
+  const data = {labels, clicks, pageViews}
+
   return (
     <section className={css.sections}>
       <div className={css.container}>
@@ -14,8 +25,8 @@ const Charts = ({user}) => {
           </h1>
         )}
 
-        <ClicksCharts/>
-        <PageCharts/>
+        <ClicksCharts {...data}/>
+        {/*<PageCharts {...data}/>*/}
 
       </div>
     </section>

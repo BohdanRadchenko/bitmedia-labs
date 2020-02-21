@@ -1,18 +1,64 @@
 import React from "react";
+import { Line } from 'react-chartjs-2';
 
-import css from './TestChart.module.css'
+const ClicksCharts = ({labels, clicks}) => {
 
-const TestChart = () => {
+  const options = {
+    line: {
+      borderColor: '#170357',
+    },
+    data: {
+      // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: labels,
+      datasets: [{
+        // label: '# of Votes',
+        // data: [12, 19, 3, 5, 2, 3],
+        label: ' ',
+        data: clicks,
+        backgroundColor: [
+          'transparent'
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    // options: {
+    //   scales: {
+    //     yAxes: [{
+    //       ticks: {
+    //         beginAtZero: true
+    //       }
+    //     }]
+    //   }
+    // }
+    options: {
+      scales: {
+        yAxes: [{
+          stacked: true
+        }]
+      }
+    }
+  }
+
+
+
   return (
     <div className={css.container}>
-      <svg width='500' height='500'>
-        <rect x='0' y='450' fill='#8ab200'  height='50' width='100'> </rect>
-        <rect x='100' y='350' fill='#8ab200'  height='150' width='100'> </rect>
-        <rect x='200' y='0' fill='#8ab200'  height='500' width='100'> </rect>
-        <rect x='300' y='300' fill='#8ab200'  height='200' width='100'> </rect>
-      </svg>
+      <h1 className={css.title}>
+        Clicks
+      </h1>
+      {/*<Line {...options} />*/}
+      <Line data={options.data} />
     </div>
   )
 }
 
-export default TestChart
+export default ClicksCharts
+
