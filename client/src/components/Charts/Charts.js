@@ -26,7 +26,7 @@ const Charts = ({user, stats}) => {
         )}
 
         <ClicksCharts {...data}/>
-        {/*<PageCharts {...data}/>*/}
+        <PageCharts {...data}/>
 
       </div>
     </section>

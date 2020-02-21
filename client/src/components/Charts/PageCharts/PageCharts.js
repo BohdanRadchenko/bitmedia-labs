@@ -3,7 +3,6 @@ import { Line } from 'react-chartjs-2';
 
 import css from './PageCharts.module.css'
 
-
 const PageCharts = ({labels, pageViews}) => {
 
   const options = {
